@@ -1,0 +1,2 @@
+(function($){'use strict';$('.has-popup-media').magnificPopup({type:'inline',overflowY:'auto',closeBtnInside:!0,mainClass:'popup-box-inline',callbacks:{elementParse:function(item){var item_id=item.src.replace('#popup-','');$.ajax({url:portfolio_ajax_loading_data.url,type:'POST',data:'action=portfolio_popup&post_id='+item_id,success:function(html){$(item.src+' .content').html(html)}})},open:function(){}}})})(jQuery)
+/*This file was exported by "Export WP Page to Static HTML" plugin which created by ReCorp (https://myrecorp.com) */
